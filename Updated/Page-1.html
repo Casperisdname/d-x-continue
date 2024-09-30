@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire 1</title>
+    <style>
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+          
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 1rem;
+           
+        }
+
+        form {
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1rem;
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: lightgrey;
+            border: none;
+            border-radius: 5px;
+        }
+
+      
+        .social-handles input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+             background-color: lightgrey;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .social-handles label {
+            font-weight: bold;
+            margin-bottom:0px;
+            display: block;
+        }
+
+        .social-handles div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+
+        .social-handles div input {
+            flex: 1;
+        }
+
+        .button {
+           padding: 10px 40px;
+            font-weight: bold;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            margin-top: 90px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .button:active {
+            background-color: #0056b3;
+        }
+        footer{
+            text-align: center;
+        }
+
+       
+        @media (max-width: 768px) {
+            input[type="text"], input[type="email"] {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .social-handles div input {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+           
+               .button {
+                padding: 15px 170px;
+                font-size: 0.9rem;
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Questionnaire</h1>
+    <h2>Step 1 of 7</h2>
+
+    <form>
+     
+        <label for="fullname">1. Personal Information</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+      
+        <div class="social-handles">
+            <label for="x-handle">b. Social Handles</label>
+
+            <div>
+                <input type="text" id="x-handle" name="x-handle" placeholder=" Enter your X handle" required>
+            </div>
+
+            <div>
+                <input type="text" id="instagram-handle" name="instagram-handle" placeholder="Enter your Instagram handle" required>
+            </div>
+
+            <div>
+                <input type="text" id="tiktok-handle" name="tiktok-handle" placeholder="Enter your Tiktok handle" required>
+            </div>
+        </div>
+
+    </form>
+
+    <footer>
+            <a class="button" href="page-2.html">Continue</a>
+    </footer>
+</body>
+</html>
