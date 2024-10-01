@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionnaire 1</title>
     <style>
-     
         * {
             margin: 0;
             padding: 0;
@@ -13,30 +12,38 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+             font-family: Arial, sans-serif;
             background-color: #fff;
             padding: 20px;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
         }
 
         h1, h2 {
             text-align: center;
-          
             margin-bottom: 20px;
+          
         }
 
         h1 {
+               margin-top: 60px;
             font-size: 1.4rem;
         }
 
         h2 {
             font-weight: bold;
             font-size: 1rem;
-           
+              margin-bottom: 30px;
+
         }
 
         form {
-            width: 100%;
+           width: 100%;
+            flex-grow: 1;
+            margin-top: 30px;
         }
 
         label {
@@ -55,10 +62,8 @@
             font-size: 1rem;
             background-color: lightgrey;
             border: none;
-            border-radius: 5px;
         }
 
-      
         .social-handles input {
             display: block;
             width: 100%;
@@ -67,14 +72,13 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 1rem;
-             background-color: lightgrey;
+            background-color: lightgrey;
             border: none;
-            border-radius: 5px;
         }
 
         .social-handles label {
             font-weight: bold;
-            margin-bottom:0px;
+            margin-bottom: 0px;
             display: block;
         }
 
@@ -89,44 +93,71 @@
         }
 
         .button {
-           padding: 10px 40px;
+            padding: 10px 40px;
             font-weight: bold;
             color: white;
             background-color: #007BFF;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: center;
-            margin-top: 90px;
+            transition: background-color 0.3s ease;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
 
         .button:active {
             background-color: #0056b3;
         }
-        footer{
+
+       footer {
             text-align: center;
+            margin-bottom: 40px;
         }
 
-       
         @media (max-width: 768px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 0.9rem;
+            }
+
             input[type="text"], input[type="email"] {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 padding: 10px;
             }
 
             .social-handles div input {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 padding: 10px;
             }
 
-           
-               .button {
-                padding: 15px 170px;
+            .button {
+                padding: 12px 100px;
                 font-size: 0.9rem;
-            
+            }
+        }
+
+         @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 0.9rem;
+            }
+
+            input[type="text"] {
+                font-size: 0.9rem;
+            }
+
+            .button {
+                padding: 10px 70px;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -136,18 +167,16 @@
     <h2>Step 1 of 7</h2>
 
     <form>
-     
         <label for="fullname">1. Personal Information</label>
         <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
 
         <input type="email" id="email" name="email" placeholder="E-mail" required>
 
-      
         <div class="social-handles">
             <label for="x-handle">b. Social Handles</label>
 
             <div>
-                <input type="text" id="x-handle" name="x-handle" placeholder=" Enter your X handle" required>
+                <input type="text" id="x-handle" name="x-handle" placeholder="Enter your X handle" required>
             </div>
 
             <div>
@@ -158,11 +187,10 @@
                 <input type="text" id="tiktok-handle" name="tiktok-handle" placeholder="Enter your Tiktok handle" required>
             </div>
         </div>
-
     </form>
 
     <footer>
-            <a class="button" href="page-2.html">Continue</a>
+        <a class="button" href="page-2.html">Continue</a>
     </footer>
 </body>
 </html>

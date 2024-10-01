@@ -11,11 +11,23 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #fff;
-            margin: 0;
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            flex-grow: 1; 
         }
 
         h1, h3 {
@@ -25,17 +37,13 @@
 
         h1 {
             font-size: 1.6rem;
+            margin-top: 60px;
         }
 
         h3 {
             font-size: 1.2rem;
             font-weight: normal;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 10px;
+            margin-bottom: 20px;
         }
 
         .heading {
@@ -43,12 +51,14 @@
             padding-bottom: 5px;
             border-bottom: 2px solid #ADD8E6;
             font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .F1 {
             margin-bottom: 20px;
         }
-        p{
+        
+        p {
             margin-bottom: 10px;
         }
 
@@ -59,7 +69,6 @@
             padding: 10px;
             margin-bottom: 15px;
             font-size: 1rem;
-           
         }
 
         .checkbox-group,
@@ -84,23 +93,26 @@
         }
 
         .btn-continue {
-            margin-top: 60px;
             background-color: #007BFF;
             color: white;
-           padding: 10px 40px;
+            padding: 15px 80px; 
             border: none;
             border-radius: 5px;
-            width: 100%;
+           
             text-align: center;
             font-size: 1em;
             cursor: pointer;
             text-decoration: none;
-            display: block;
-            margin-top: 70px;
+           
         }
 
         .btn-continue:hover {
             background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-bottom: 40px; 
         }
 
         @media (max-width: 768px) {
@@ -124,7 +136,7 @@
             }
 
             .btn-continue {
-                padding: 10px 160px;
+                  padding: 15px 90px;
                 font-size: 0.9rem;
             }
         }
@@ -150,7 +162,7 @@
             }
 
             .btn-continue {
-                padding: 15px 170px;
+                padding: 15px 90px;
                 font-size: 0.9rem;
             }
         }
@@ -185,8 +197,10 @@
             <label><input type="radio" name="frequency" value="Frequently"> Frequently</label>
         </div>
     </div>
-
-    <a href="page-4.html" class="btn-continue">Continue</a>
 </div>
+
+<footer>
+    <a href="page-4.html" class="btn-continue">Continue</a>
+</footer>
 </body>
 </html>

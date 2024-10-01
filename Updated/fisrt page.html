@@ -6,28 +6,40 @@
 	<title>Questionnaire</title>
 	<style>
 		
-		body {
+		html, body {
+			height: 100%;
 			margin: 0;
-			padding: 0;
+			overflow: hidden;
 			font-family: Arial, sans-serif;
 		}
 
-		
+		body {
+		  font-family: Arial, sans-serif;
+            background-color: #fff;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+		}
+
 		.contain {
+			margin-top: ;
 			text-align: center;
-			padding: 20px;
+			width: 100%;
 			max-width: 100%;
+			padding: 0 10px;
 			box-sizing: border-box;
 		}
 
-		
 		.text {
-			padding-left: 10%;
-			padding-right: 10%;
 			font-size: 1.2rem;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 40px;
 		}
 
-		
 		.button {
 			padding: 10px 40px;
 			font-weight: bold;
@@ -35,34 +47,40 @@
 			background-color: #007BFF;
 			border-radius: 5px;
 			display: inline-block;
-			margin-top: 20px;
-			text-align: center;
+			
+		}
+		h1{
+			margin-top: 60px;
+			font-size: 30px;
 		}
 
 		a {
 			text-decoration: none;
+			color: white;
 		}
 
-	
 		img {
 			width: 100%;
-			max-width: 400px;
-			height: auto;
+		
+		
+			
+			height: 80%;
 		}
-		footer{
+
+		footer {
+			
+			margin-bottom: 40px;
 			text-align: center;
 		}
 
-	
+		
 		@media (max-width: 768px) {
 			.text {
 				font-size: 1rem;
-				padding-left: 5%;
-				padding-right: 5%;
 			}
 
 			.button {
-				padding: 15px 90px;
+				padding: 10px 20px;
 				font-size: 1rem;
 			}
 		}
@@ -70,13 +88,15 @@
 		@media (max-width: 480px) {
 			.text {
 				font-size: 0.9rem;
-				padding-left: 5%;
-				padding-right: 5%;
 			}
 
 			.button {
-				padding: 15px 90px;
+				padding: 10px 90px;
 				font-size: 0.9rem;
+			}
+
+			img {
+				max-width: 800px;
 			}
 		}
 	</style>
@@ -84,13 +104,15 @@
 <body>
 	<div class="contain">
 		<h1>Questionnaire</h1>
-		<p class="text">Answer the questions to have more information about you to complete the following setup.</p>
+		<div>
+			<p class="text">Answer the questions to have more information about you to complete the following setup.</p>
 		<img src="standing.png" alt="Person standing">
+		</div>
 		
 	</div>
 
 	<footer>
-			<a class="button" href="page-1.html">Continue</a>
+		<a class="button" href="page-1.html">Continue</a>
 	</footer>
 </body>
 </html>
